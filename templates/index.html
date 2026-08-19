@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Gantungan Kunci AI Sempurna</title>
+    
+    <!-- Sandbox AI untuk Dynamic Action (Diizinkan) -->
+    <style id="ai-dynamic-styles"></style> 
+    
+    <!-- Memanggil Kulit & Visual Asli (Terkunci) -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='robot.css') }}">
+</head>
+<body>
+    <div class="main-container" id="mainContainer">
+        <div class="status-panel">
+            <div class="led-panel">
+                <div class="led" id="ledMic" title="Mic"></div>
+                <div class="led" id="ledAi" title="System"></div>
+            </div>
+        </div>
+        <div class="face" id="robotFace" onclick="toggleMic()" title="Klik Untuk Bicara">
+            <div class="eye left neutral" id="eyeLeft"></div>
+            <div class="eye right neutral" id="eyeRight"></div>
+        </div>
+        <div class="text-area">
+            <div class="transcript" id="transcriptBox"></div>
+            <div class="reply-wrapper" id="replyWrapper">
+                <div id="replyBox"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Memanggil Mesin Audio, State Machine, & Zombie Mic -->
+    <script src="{{ url_for('static', filename='robot.js') }}"></script>
+</body>
+</html>
+
